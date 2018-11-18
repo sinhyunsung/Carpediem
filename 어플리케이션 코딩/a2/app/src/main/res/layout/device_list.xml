@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DeviceListActivity">
+
+    <TextView
+        android:id="@+id/title_paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="연결했던 기기" />
+
+    <ListView
+        android:id="@+id/paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/title_nearby_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="주변의 기기" />
+
+    <ListView
+        android:id="@+id/nearby_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="기기 찾기" />
+</LinearLayout>
